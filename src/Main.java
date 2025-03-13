@@ -56,5 +56,15 @@ public class Main {
         float massKg = (float)  massGram / 1000 ;//в килограммах
         System.out.println("вес спортзавтрака "+ massGram + " грамм");
         System.out.println("вес спортзавтрака "+ massKg + "  килограмма");
+        //задание 7
+        byte masse = 7;
+        short loseWeight1 = 250;
+        short loseWeight2 = 500;
+        short kilogramsGrams = 1000;
+        short massGrams = (short) ((short)masse * kilogramsGrams);//потерять вес в граммах
+        short option1 = (short) ((short)massGrams / loseWeight1);//если терять по 250 грамм в день
+        short option2 = (short) ((short)massGrams / loseWeight2);
+        System.out.println("что бы потерять " + masse + " кг,теряя по 250 грамм в день, потребуется " + option1 + " дней.");
+        System.out.println("что бы потерять " + masse + " кг,теряя по 250 грамм в день, потребуется " + option2 + " дней.");
     }
 }
