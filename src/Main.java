@@ -43,5 +43,18 @@ public class Main {
         byte allWhitePaint = (byte) (totalOffices * whitePaintCabinet);//всего белой краски
         byte allBrownPaint = (byte) (totalOffices * brownPaintCabinet);//всего коричневой краски
         System.out.println("В школе, где " + totalOffices + " классов, нужно " + allWhitePaint + " банок белой краски и " + allBrownPaint + " банок коричневой краски.");
+        //задание 6
+        byte bananas = 5;
+        byte weightOneBanana = 80;//масса одного банана
+        byte milk = 2;
+        byte mlMilkGrams = 105;//100 милиграмм в граммах
+        byte iceCream = 2;
+        byte massOneIceCream = 100;
+        byte eggs = 4;
+        byte weightOneEgg = 70;
+        short massGram = (short) ( bananas * weightOneBanana + milk * mlMilkGrams + iceCream * massOneIceCream + eggs * weightOneEgg);//в граммах
+        float massKg = (float)  massGram / 1000 ;//в килограммах
+        System.out.println("вес спортзавтрака "+ massGram + " грамм");
+        System.out.println("вес спортзавтрака "+ massKg + "  килограмма");
     }
 }
