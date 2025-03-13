@@ -23,5 +23,17 @@ public class Main {
         int studentsInThreeClasses = ClassLudmila + ClassAnna + ClassEkaterina; //всего учеников в клвссе
         int sheetsEach = sheetsPaper/studentsInThreeClasses;//итог
         System.out.println("На каждого ученика расчитано " + sheetsEach + " листов бумаги.");
+        //задание 4
+        byte bottles = 16; // производит бутылок за 2 минуты
+        byte inMinute = (byte) (bottles / 2);//бутылок за 1 минуту
+        byte twentyMinutes = 20;
+        byte perDay = 1;
+        byte threeDays = 3;
+        byte  month = 1;
+        System.out.println("за " + twentyMinutes + " минут машина произвела " + (inMinute * twentyMinutes) + " штук бутылок");
+        System.out.println("за " + perDay + " сутки машина произвела " + (inMinute * 60 * 24) + " штук бутылок");
+        System.out.println("за " + threeDays + " суток машина произвела " + (inMinute * 60 * 24 *3) + " штук бутылок");
+        System.out.println("за " + month + " месяц машина произвела " + (inMinute * 60 * 24 * 30) + " штук бутылок");
+
     }
 }
