@@ -15,5 +15,13 @@ public class Main {
         short number8 = -159;
         int regularNumber = 27897;
         byte smallNumber = 67;
+        //задание 3
+        byte ClassLudmila = 23;//учеников в классе Людмилы Павловны
+        byte ClassAnna = 27;//учеников в классе Анны Сергеевны
+        byte ClassEkaterina = 30;//учеников в классе Екатерины Андреевны
+        short sheetsPaper = 480;//листов бумаги заказано
+        int studentsInThreeClasses = ClassLudmila + ClassAnna + ClassEkaterina; //всего учеников в клвссе
+        int sheetsEach = sheetsPaper/studentsInThreeClasses;//итог
+        System.out.println("На каждого ученика расчитано " + sheetsEach + " листов бумаги.");
     }
 }
