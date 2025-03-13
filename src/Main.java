@@ -66,5 +66,19 @@ public class Main {
         short option2 = (short) ((short)massGrams / loseWeight2);
         System.out.println("что бы потерять " + masse + " кг,теряя по 250 грамм в день, потребуется " + option1 + " дней.");
         System.out.println("что бы потерять " + masse + " кг,теряя по 250 грамм в день, потребуется " + option2 + " дней.");
+        //задание 8
+        int masha = 67_760;
+        int denis = 83_690;
+        int kristina = 76_230;
+        float raiseSalary = 0.1f;
+        float raiseSalaryMasha = masha * raiseSalary;//годовой доход маши на 10%
+        float salaryMashaNow = masha + raiseSalaryMasha;//месячная зп маши стала
+        float raiseSalaryDenis = denis * raiseSalary;//годовой доход дениса на 10%
+        float salaryDenisNow = denis + raiseSalaryDenis;//месячная зп дениса сталаraiseSalaryMasha
+        float raiseSalaryKristina = kristina * raiseSalary;
+        float salaryKristinaNow = kristina + raiseSalaryKristina;
+        System.out.println("Маша теперь получает " + salaryMashaNow + " рублей. Годовой доход вырос на " + raiseSalaryMasha * 12 + " рублей.");
+        System.out.println("Денис теперь получает " + salaryDenisNow + " рублей. Годовой доход вырос на " + raiseSalaryDenis * 12 + " рублей.");
+        System.out.println("Кристина теперь получает " + salaryKristinaNow + " рублей. Годовой доход вырос на " + raiseSalaryKristina * 12 + " рублей.");
     }
 }
