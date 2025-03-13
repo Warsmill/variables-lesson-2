@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //задание 1
+        // задание 1
         byte number1 = 127;
         short number2 = 128;
         int number3 = 33_000;
@@ -34,6 +34,14 @@ public class Main {
         System.out.println("за " + perDay + " сутки машина произвела " + (inMinute * 60 * 24) + " штук бутылок");
         System.out.println("за " + threeDays + " суток машина произвела " + (inMinute * 60 * 24 *3) + " штук бутылок");
         System.out.println("за " + month + " месяц машина произвела " + (inMinute * 60 * 24 * 30) + " штук бутылок");
-
+        //задание 5
+        byte totalCans = 120;
+        byte whitePaintCabinet = 2;//белой краски на 1 кабинет
+        byte brownPaintCabinet = 4;//коричневой краски на 1 кабинет
+        byte paintsOneOffice = (byte) (whitePaintCabinet + brownPaintCabinet);//всего краски на один кабинет
+        byte totalOffices = (byte) (totalCans/paintsOneOffice);//всего кабинетов в школе
+        byte allWhitePaint = (byte) (totalOffices * whitePaintCabinet);//всего белой краски
+        byte allBrownPaint = (byte) (totalOffices * brownPaintCabinet);//всего коричневой краски
+        System.out.println("В школе, где " + totalOffices + " классов, нужно " + allWhitePaint + " банок белой краски и " + allBrownPaint + " банок коричневой краски.");
     }
 }
